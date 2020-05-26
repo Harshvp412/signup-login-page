@@ -1,0 +1,26 @@
+<html>
+ <head>
+        <title>Login page</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css" />
+ </head>
+
+ <body>
+   <% if (messages.error) { %>
+    <% messages.error %>
+    <% } %>
+    <div class="main">
+      <p class="sign" align="center">Sign Up</p>
+
+      <form class="form1" method="POST" action="/login">
+
+        <input class="un"  type="email" align="center" placeholder="Email" required>
+        <input class="pass"  type="password" align="center" placeholder="Password" required>
+       
+        <input class="submit" type="submit" align="center" value="Login">
+        <p class="forgot" align="center"><a href="/register">New registation</p>
+                   
+      </div>
+       
+  </body>
+
+</html>
